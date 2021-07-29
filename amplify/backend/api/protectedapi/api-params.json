@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/private",
+      "lambdaFunction": "amplifyjwt6f60574d",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/private"
+    }
+  ],
+  "resourceName": "protectedapi",
+  "apiName": "protectedapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "amplifyjwt6f60574d"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-amplifyjwt-dev-63123-authRole",
+    "unAuthRoleName": "amplify-amplifyjwt-dev-63123-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "amplifyjwt6f60574d",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
